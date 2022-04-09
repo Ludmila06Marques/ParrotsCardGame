@@ -39,13 +39,11 @@ body{
     transform-style: preserve-3d;
 }
 .area-carta:hover .carta {
-    transform: rotateY(180deg);
+    transform:rotateY(180deg);
   
 
 }
-.frente{
-   
-}
+
 .face{
     position: absolute;
     backface-visibility: hidden;
