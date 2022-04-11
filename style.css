@@ -1,3 +1,7 @@
+:root{
+    --w:calc(70vw / 6);
+    --h:calc (70vh / 3);
+}
 *{
     transition: all 1s;
 }
@@ -5,8 +9,41 @@ body{
     padding: 0;
     margin: 0;
     -webkit-perspective: 1000;
-    background-color: #E5E5E5;
+    background-color: #EEF6BF;
 }
+.area-carta, .carta, .cara {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 51px;
+    width: 117px;
+    height: 146px;
+   
+  
+   
+}
+.carta{
+    border:solid 1px  #99CEA8;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.cara{
+    position: absolute;
+    backface-visibility: hidden;
+ 
+}
+.traseira{
+    background-color:#A7E9AF;
+    transform: rotateY(180deg);
+
+}
+.superior{
+    background-color: #A7E9AF;
+  
+
+}
+
 .titulo h1{
     display: flex;
     align-items: center;
@@ -18,58 +55,25 @@ body{
 .titulo-mobile{
     display: none;
 }
-.jogo{
-  
+#jogo{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
 }
-.carta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 51px;
-    width: 117px;
-    height: 146px;
-    background-color: #A7E9AF;
-    border: solid 1px #99CEA8;
-    border-radius: 5px;
-    position: relative;
-    transform-style: preserve-3d;
-}
-.area-carta:hover .carta {
-    transform:rotateY(180deg);
-  
 
-}
-
-.face{
-    position: absolute;
-    backface-visibility: hidden;
-}
-.tras{
-    transform: rotateY(180deg);
-}
-.frente img{
+.superior img{
     width: 100px;
     height: 100px;
     
 }
-.tras img{
+.traseira img{
    
     width: 100px;
     height: 100px;
    
    
 }
-
-
-
-
-
-
-
 
 @media (max-width: 667px) {
 
