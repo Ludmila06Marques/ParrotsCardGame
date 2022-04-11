@@ -34,18 +34,19 @@ function selecionarCarta()
 function deselecionar()
 _______________________________________________________________________________
 */
-    let imagens = []
-    let selecionada = []
-    let qtdcartas;
+    let imagens = [];
+    let selecionada = [];
+    var qtdCartas;
+   
     function prepararInicio(){
-          qtdcartas= parseInt(  prompt("Qual a quantidade de cartas? (entre 4 e 14)"))
-          for(i=0; i<qtdcartas.innerHTML;i++){
-                qtdcartas=[i]
-        } 
-           gerarJogo();   
-           
-         
-         
+          qtdCartas= parseInt(prompt("Qual a quantidade de cartas? (entre 4 e 14 , que seja par)"));      
+       while(qtdCartas<4 || qtdCartas>14 || qtdCartas%2!=0){
+        alert("Insira um valor valido!")
+        qtdCartas= parseInt(prompt("Qual a quantidade de cartas? (entre 4 e 14)"));      
+       }
+       
+          gerarJogo();   
+       
     }
     function carregarImagens() {
       imagens=['<img src="/img/bobrossparrot.gif" >',
@@ -58,11 +59,11 @@ _______________________________________________________________________________
     }
 
     function gerarJogo() {
-        carregarImagens()
-        selecionada = []
+        carregarImagens();
+        selecionada = [];
         let jogo = document.getElementById("jogo")
-        let cartas = []
-        for (let i = 0; i < qtdcartas.length; i++) {
+        let cartas = [];
+        for (let i = 0; i < qtdCartas; i++) {
             cartas.push(`
             <div class="area-carta" onclick="selecionarCarta(${i})">
                 <div class="carta" id="carta${i}">
