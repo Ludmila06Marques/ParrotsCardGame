@@ -24,7 +24,7 @@ body{
    
 }
 .carta{
-    border:solid 1px  #99CEA8;
+
     position: relative;
     transform-style: preserve-3d;
 }
@@ -36,11 +36,14 @@ body{
 .traseira{
     background-color:#A7E9AF;
     transform: rotateY(180deg);
+    border:solid 1px  #99CEA8;
+    border-radius: 5px;
 
 }
 .superior{
     background-color: #A7E9AF;
-  
+    border:solid 1px  #99CEA8;
+    border-radius: 5px;
 
 }
 
@@ -50,6 +53,7 @@ body{
     justify-content: center;
     color:#75B79E;
     font-size: 56px;
+    font-style:'Roboto', sans-serif;;
     
 }
 .titulo-mobile{
@@ -88,6 +92,7 @@ body{
  .titulo h1
  {
         font-size: 36px;   
+        font-style:'Roboto', sans-serif;
 }
    
    
