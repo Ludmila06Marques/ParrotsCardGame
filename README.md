@@ -1,6 +1,6 @@
 <h1>Memory game</h1>
 
-<h3>Application made in a responsive way using html and css</h3>
+<h3>Application made in a responsive way using html, javascript and  css</h3>
 
 
 
